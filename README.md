@@ -1,6 +1,6 @@
 # Price Basket Project
 
-This project aims to accurately calculate and output the subtotal, discounts (if applicable) and total prices of a shopping basket given items inputted by a user (inputs and outputs via the CLI). The project will be unit test driven with multiple basket scenarios driving the development and testing of the program to help ensure accuracy, validity and scalability.
+This project aims to accurately calculate and output the subtotal, discounts (if applicable) and total prices of a shopping basket given items inputted by a user (inputs and outputs via the command line). The project will be unit test driven with multiple basket scenarios driving the development and testing of the program to help ensure accuracy, validity and scalability.
 
 ## Key learning points
 - IntelliJ configuration and use.
