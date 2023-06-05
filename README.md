@@ -89,7 +89,7 @@ This project aims to accurately calculate and output the subtotal, discounts (if
 - Run this file, as per previous steps, and the CLI should output the result (Passed/Failed).
 <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/a69b105a-a396-4cca-b7ef-5ccb9178c3fb" width="500">
   
-### Adding new shopping basket items:
+### Adding/removing permitted shopping basket items
 - Accounting for scaling requirements, the program has been designed to allow a user to easily add/remove permitted shopping basket items.
 - If wishing to modify, please open the 'Items' file using the project tree as before (src -> main -> basket -> Items) to see the items and their associated prices contained in a Map. 
 - To remove an item: remove the line relating to it in the Map and, if it is the final item in the Map, please remember to remove the comma from the previous line.
@@ -99,5 +99,25 @@ This project aims to accurately calculate and output the subtotal, discounts (if
 - After modifying, open the Main file (src -> main -> basket -> Main), run it and any items added should be permitted and, conversely, any items removed should now lead to an invalid basket if entered. For example, permitting pineapples: 
 <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/207c9f96-3d46-438a-8360-1a632169f792" width="300">
 
-*** Please note, that if the permitted shopping basket items are modified then some of the current unit tests may fail if run. To pass said tests may have to be modified in 'basketSpec' (src -> test -> scala -> basketSpec).  
-   
+*** Please note that if the permitted shopping basket items are modified then some of the current unit tests may fail if run. To pass said tests may have to be modified in 'basketSpec' (src -> test -> scala -> basketSpec).
+
+### Adding/remving available discount offers
+- Again, like the adding/removing of permitted shopping basket items, this program has been designed to allow a user to easily add/remove discounts. Please bear in mind this change will require modifications to 2 files.
+- Open the Offers file (src -> main -> basket -> Offers). 
+- Adding a discount: 
+  - Firstly, ensure the item the offer applies to has been permitted (see 'Adding/removing permitted shopping basket items' above)   
+  - Add a new apply method for the discount in question and name it appropriately and be sure to return Seq(discount_text: String, discount_amount: Double). For example, a 'PinapplesOffer' is added:
+  <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/15668807-393b-49a7-bc01-fd86b8232449" width="500">
+  
+  *** Please ensure an 'apply' method is used and the return is correct to ensure proper implementation. A 'try-catch' clause has been added in the 'Calculator' file to prompt the user with a specific error if 'Offers' is modified incorrectly.
+  <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/077639ca-4db7-43ed-bc05-df36a76d25c5" width="500">
+
+  
+  - Open the 'Calculator' file (src -> main -> basket -> Calculator) and append the offer in format 'Offer.offer_name' to the 'val offers' field. For example:
+  <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/bb530226-9e6b-4d40-a2a9-1c5baafa2130" width="500">
+  
+  - Now open the 'Main' file (src -> main -> basket -> Main), run the program and the offer should be applied in the output if the items entered qualify for it. For example:
+  <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/2f6f0b8e-de16-48dd-ab26-ec6dffef5b45" width="300">
+
+- Removing a discount:
+  - With reference to the 'adding a discount' steps, simply remove the 'apply' method relating to the discount in the 'Offers' file and remove the related 'Offer.offer_name' reference in the Calculator file.
