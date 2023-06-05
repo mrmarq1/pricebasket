@@ -18,7 +18,7 @@ This project aims to accurately calculate and output the subtotal, discounts (if
   - 'Apples 10% off' -> £0.10 off each bag of apples
   - 'Buy 2 soups and get 1 bread half price' -> £0.40 off each qualifying loaf of bread
 
-## Key Features:
+## Key Features
 
 -	User input and output via the command line.
 -	User input case and whitespace insensitive.
