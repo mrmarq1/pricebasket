@@ -88,7 +88,9 @@ This project aims to accurately calculate and output the subtotal, discounts (if
 
 - Run this file, as per previous steps, and the CLI should output the result (Passed/Failed).
 <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/a69b105a-a396-4cca-b7ef-5ccb9178c3fb" width="500">
-  
+
+- Note, the unit tests follow a valid/invalid basket structure (as per 'given a valid basket' and 'given an invalid basket'), so to add more tests please just follow this logic and incorporate the relevant inputs and expected outputs accordingly.
+
 ### Adding/removing permitted shopping basket items
 - Accounting for scaling requirements, the program has been designed to allow a user to easily add/remove permitted shopping basket items.
 - If wishing to modify, please open the 'Items' file using the project tree as before (src -> main -> basket -> Items) to see the items and their associated prices contained in a Map. 
