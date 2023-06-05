@@ -15,8 +15,8 @@ This project aims to accurately calculate and output the subtotal, discounts (if
   - Soup -> £0.65
   
 - Available discounts and amount saved per discount:
-  - 'Apples 10% off' -> £0.10 per bag of apples
-  - 'Buy 2 soups and get 1 bread half price' -> £0.40 per loaf of bread 
+  - 'Apples 10% off' -> £0.10 off each bag of apples
+  - 'Buy 2 soups and get 1 bread half price' -> £0.40 off each qualifying loaf of bread
  
 ## Project installation
 
