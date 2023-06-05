@@ -99,9 +99,9 @@ This project aims to accurately calculate and output the subtotal, discounts (if
 - After modifying, open the Main file (src -> main -> basket -> Main), run it and any items added should be permitted and, conversely, any items removed should now lead to an invalid basket if entered. For example, permitting pineapples: 
 <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/207c9f96-3d46-438a-8360-1a632169f792" width="300">
 
-*** Please note that if the permitted shopping basket items are modified then some of the current unit tests may fail if run. To pass said tests may have to be modified in 'basketSpec' (src -> test -> scala -> basketSpec).
+*** Please note that if the permitted shopping basket items are modified then some of the current unit tests may fail if run. To pass, said tests may have to be modified in 'basketSpec' (src -> test -> scala -> basketSpec).
 
-### Adding/remving available discount offers
+### Adding/removing available discount offers
 - Again, like the adding/removing of permitted shopping basket items, this program has been designed to allow a user to easily add/remove discounts. Please bear in mind this change will require modifications to 2 files.
 - Open the Offers file (src -> main -> basket -> Offers). 
 - Adding a discount: 
@@ -124,3 +124,5 @@ This project aims to accurately calculate and output the subtotal, discounts (if
 
 - Removing a discount:
   - With reference to the 'adding a discount' steps, simply remove the 'apply' method relating to the discount in the 'Offers' file and remove the related 'Offer.offer_name' reference in the Calculator file.
+
+*** Please note that if the discounts are modified then some of the current unit tests may fail if run. To pass, said tests may have to be modified in 'basketSpec' (src -> test -> scala -> basketSpec).
