@@ -18,6 +18,17 @@ This project aims to accurately calculate and output the subtotal, discounts (if
   - 'Apples 10% off' -> £0.10 off each bag of apples
   - 'Buy 2 soups and get 1 bread half price' -> £0.40 off each qualifying loaf of bread
 
+## Key Features:
+
+-	User input and output via the command line.
+-	User input case and whitespace insensitive.
+-	Basket validity checked and error message outputted for invalid entries.
+-	Discounts outputted correctly with ‘(No discounts available)’ given when no offers apply.
+-	Subtotal, discount amount(s) and total price accurately calculated.
+-	Price outputs formatted to 2dp with amounts < 1 expressed in pence and large amount in pounds (with commas added by the thousand e.g. £1,000.00 instead of £1000.00). 
+-	Unit testing incorporated for both valid and invalid basket scenarios.
+-	Addition/removal of permitted basket items and discounts made easy to facilitate any future changes that may be needed.
+
 ## Key example outputs from testing
 
 - User enters valid shopping basket but no discounts are available:
