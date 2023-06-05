@@ -7,7 +7,7 @@ This project aims to accurately calculate and output the subtotal, discounts (if
 - Scala core principles and techniques.
 - Scala Test unit testing (with AnyWordSpec)
 
-## Project parameters:
+## Project parameters
 - Permitted shopping basket items and related prices:
   - Apples -> £1.00
   - Bread -> £0.80
@@ -17,7 +17,27 @@ This project aims to accurately calculate and output the subtotal, discounts (if
 - Available discounts and amount saved per discount:
   - 'Apples 10% off' -> £0.10 off each bag of apples
   - 'Buy 2 soups and get 1 bread half price' -> £0.40 off each qualifying loaf of bread
+
+## Key example outputs from testing
+
+- User enters valid shopping basket but no discounts are available:
+<img src="https://github.com/mrmarq1/pricebasket/assets/126958930/504b3c64-a0a0-4a88-ab87-558c47ed7241" width="300">
+
+- User enters valid shopping basket but only the apples discounts is available:
+<img src="https://github.com/mrmarq1/pricebasket/assets/126958930/5636410c-75da-470b-86e9-e41d986e1c92" width="300">
+
+- User enters valid shopping basket but only soup-bread discount is available:
+<img src="https://github.com/mrmarq1/pricebasket/assets/126958930/40ca1194-ded1-4df8-9dd8-86fc3b93dacd" width="300">
+
+- User enters valid shopping basket and both discounts are available:
+<img src="https://github.com/mrmarq1/pricebasket/assets/126958930/0b609a3b-b843-45e7-88c8-2259c4a35fcf" width="300">
  
+- User enters an invalid shopping basket:
+<img src="https://github.com/mrmarq1/pricebasket/assets/126958930/cb4cfba9-667b-4cd4-9fd2-23d0622209dd" width="500">
+
+- Unit tests run and all passed:
+<img src="https://github.com/mrmarq1/pricebasket/assets/126958930/a69b105a-a396-4cca-b7ef-5ccb9178c3fb" width="500">
+
 ## Project installation
 
 1.  Within IntelliJ, select 'File' -> 'New' -> 'Project from Version Control...'.
