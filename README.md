@@ -110,13 +110,16 @@ This project aims to accurately calculate and output the subtotal, discounts (if
   <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/15668807-393b-49a7-bc01-fd86b8232449" width="500">
   
   *** Please ensure an 'apply' method is used and the return is correct to ensure proper implementation. A 'try-catch' clause has been added in the 'Calculator' file to prompt the user with a specific error if 'Offers' is modified incorrectly.
+  
   <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/077639ca-4db7-43ed-bc05-df36a76d25c5" width="500">
 
   
   - Open the 'Calculator' file (src -> main -> basket -> Calculator) and append the offer in format 'Offer.offer_name' to the 'val offers' field. For example:
+  
   <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/bb530226-9e6b-4d40-a2a9-1c5baafa2130" width="500">
   
   - Now open the 'Main' file (src -> main -> basket -> Main), run the program and the offer should be applied in the output if the items entered qualify for it. For example:
+  
   <img src="https://github.com/mrmarq1/pricebasket/assets/126958930/2f6f0b8e-de16-48dd-ab26-ec6dffef5b45" width="300">
 
 - Removing a discount:
